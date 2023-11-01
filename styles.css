@@ -5,40 +5,29 @@ body {
 }
 
 .maintenance-background {
-    background-image: url('iamge.jpeg');
-    
-    
-    background-repeat: no-repeat;
-    margin: 0px 0px 0px 0px ; 
-    padding: 0px 0px 0px 0px ;
-    
+    background-image: url('your-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
     display: flex;
-    
-}
-
-.maintenance-content{
-    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .maintenance-content {
     text-align: left;
-    /* background: white; */
-    padding: 0px 0px 0px 0px ;
-    margin: 0px 0px 0px 150px ;
+    background: rgba(255, 255, 255);
+    padding: 20px;
     border-radius: 5px;
 }
 
 h1 {
-    color: #0c007a;
+    color: #333;
     font-size: 36px;
-    padding: 0px 0px 0px 0px ;
-    margin: 0px 0px 0px 0px ;
-    /* background-color: #ca9898; */
-    
+    margin: 0;
 }
 
 p {
-    color: #555555;
+    color: #555;
     font-size: 18px;
-    /* background-color: #e14646; */
 }
