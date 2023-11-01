@@ -15,7 +15,7 @@ body {
 }
 
 .maintenance-content {
-    text-align: right;
+    text-align: left;
     background: rgba(255, 255, 255, 0.7);
     padding: 20px;
     border-radius: 5px;
