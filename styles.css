@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.maintenance-background {
+    background-image: url('your-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.maintenance-content {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+h1 {
+    color: #333;
+    font-size: 36px;
+    margin: 0;
+}
+
+p {
+    color: #555;
+    font-size: 18px;
+}
