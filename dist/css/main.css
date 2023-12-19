@@ -24,7 +24,8 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
+  
+  
   visibility: hidden; }
   .menu.show {
     visibility: visible; }
@@ -40,43 +41,43 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #373737;
+    background: #000000;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #444;
+    background-color: #505050;
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
     .menu-branding .portrait {
-      width: 250px;
-      height: 250px;
+      width: 375px;
+      height: 375px;
       background: url("../img/portrait.png");
       border-radius: 50%;
-      border: solid 3px #eece1a; }
+      position: center;
+      border: solid 5px #eece1a; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
-    transition: all 0.5s ease-out; }
+    transition: all 1.5s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
-    .menu .nav-item.current > a {
-      color: #eece1a; }
+    
   .menu .nav-link {
     display: inline-block;
     position: relative;
     font-size: 40px;
     text-transform: uppercase;
     padding: 1rem 0;
-    font-weight: 300;
+    font-weight: bold;
     color: #fff;
-    text-decoration: none;
+    
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: chartreuse;
+      color: rgb(255, 251, 0);
         transform: scale(1.25)
 }
 
@@ -90,6 +91,8 @@
   transition-delay: 0.3s; }
 
 .nav-item:nth-child(4) {
+  transition-delay: 0.4s; }
+.nav-item:nth-child(5) {
   transition-delay: 0.4s; }
 
 * {
@@ -157,13 +160,21 @@ main {
   grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
+    align-items: center;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
     grid-area: bioimage;
-    margin: auto;
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    background-image: url(../img/portrait.png);
+    background-position: center; /* Center the background image */
     border-radius: 50%;
-    border: #eece1a 3px solid; }
+    border: #eece1a 5px solid;  }
   .about-info .bio {
     grid-area: bio;
-    font-size: 1.5rem; }
+    font-size: 1rem; }
   .about-info .job-1 {
     grid-area: job1; }
   .about-info .job-2 {
