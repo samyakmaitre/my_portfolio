@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Columns Layout</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            background-color: rgb(43, 43, 43);
+        }
+
+        #left-column {
+            width: 23%;
+            height: 95%;
+            background-color: rgb(43, 43, 43);
+            margin: 20px;
+            padding: 20px;
+            box-sizing: border-box;
+            border: 2px solid #ccc; /* thin-width border */
+            border-radius: 20px;
+            display: flex;
+            
+            justify-content: center;
+            align-items: center;
+        }
+
+        #name {
+            background-color: #ffa4a4;
+            height: 15%;
+            margin-bottom: 10px;
+        }
+        #profile-img{
+            background-color: #ffa4a4;
+            height: 37%;
+            width: 80%;
+            left: 1000px;
+            margin-bottom: 10px;
+            
+            
+           
+        }
+
+        #profile-img img{
+            height: 100%;
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        #profile-desc{
+            background-color: #ffa4a4;
+            height: 15%;
+            margin-bottom: 10px;
+        }
+
+        #socials{
+            background-color: #ffa4a4;
+            height: 15%;
+            margin-bottom: 10px;
+        }
+
+        #mail-button{
+            background-color: #ffa4a4;
+            height: 10%;
+            margin-bottom: 10px;
+        }
+
+        #right-column {
+            width: 77%;
+           
+            color: rgb(255, 255, 255);
+            overflow-y: auto;
+            padding: 3rem 10rem 0rem 10rem;
+            box-sizing: border-box;
+        }
+        #static-rectangle {
+            border: 2px solid #ccc;
+            position: absolute;
+            border-radius: 50px;
+            top: 25%;
+            right: 5%;
+            width: 50px;
+            height: 50%;
+            background-color: #ffa4a4; /* Adjust color as needed */
+        }
+    </style>
+</head>
+<body>
+    <div id="left-column">
+        <div id="name">
+
+        </div>
+        <div id="profile-img">
+            <img src="me.png.jpg" alt="">
+        </div>
+        <div id="profile-desc">
+            
+        </div>
+        <div id="socials">
+            
+        </div>
+        <div id="mail-button">
+            
+        </div>
+    </div>
+
+    <div id="right-column">
+        <h2>Scrollable Column</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et justo nec urna consequat varius. Vivamus scelerisque leo eu purus bibendum tincidunt. Nulla facilisi. In hac habitasse platea dictumst. Nullam venenatis facilisis mauris, nec posuere metus auctor vel. Sed a risus in est ultrices luctus non in elit. Fusce imperdiet eros vitae risus sagittis, et facilisis augue ultricies. Nullam dapibus eleifend tortor, vitae pharetra turpis facilisis a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis commodo, libero vitae bibendum congue, sapien urna ullamcorper libero, eu rhoncus enim libero eu odio.</p>
+        <div id="righ-column">
+            <h2>Scrollable Column</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et justo nec urna consequat varius. Vivamus scelerisque leo eu purus bibendum tincidunt. Nulla facilisi. In hac habitasse platea dictumst. Nullam venenatis facilisis mauris, nec posuere metus auctor vel. Sed a risus in est ultrices luctus non in elit. Fusce imperdiet eros vitae risus sagittis, et facilisis augue ultricies. Nullam dapibus eleifend tortor, vitae pharetra turpis facilisis a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis commodo, libero vitae bibendum congue, sapien urna ullamcorper libero, eu rhoncus enim libero eu odio.</p>
+            <!-- Add more content as needed -->
+        </div>
+        <div id="righ-column">
+            <h2>Scrollable Column</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et justo nec urna consequat varius. Vivamus scelerisque leo eu purus bibendum tincidunt. Nulla facilisi. In hac habitasse platea dictumst. Nullam venenatis facilisis mauris, nec posuere metus auctor vel. Sed a risus in est ultrices luctus non in elit. Fusce imperdiet eros vitae risus sagittis, et facilisis augue ultricies. Nullam dapibus eleifend tortor, vitae pharetra turpis facilisis a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis commodo, libero vitae bibendum congue, sapien urna ullamcorper libero, eu rhoncus enim libero eu odio.</p>
+            <!-- Add more content as needed -->
+        </div>
+        <h2>Scrollable Column</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et justo nec urna consequat varius. Vivamus scelerisque leo eu purus bibendum tincidunt. Nulla facilisi. In hac habitasse platea dictumst. Nullam venenatis facilisis mauris, nec posuere metus auctor vel. Sed a risus in est ultrices luctus non in elit. Fusce imperdiet eros vitae risus sagittis, et facilisis augue ultricies. Nullam dapibus eleifend tortor, vitae pharetra turpis facilisis a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis commodo, libero vitae bibendum congue, sapien urna ullamcorper libero, eu rhoncus enim libero eu odio.</p>
+        <div id="righ-column">
+            <h2>Scrollable Column</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et justo nec urna consequat varius. Vivamus scelerisque leo eu purus bibendum tincidunt. Nulla facilisi. In hac habitasse platea dictumst. Nullam venenatis facilisis mauris, nec posuere metus auctor vel. Sed a risus in est ultrices luctus non in elit. Fusce imperdiet eros vitae risus sagittis, et facilisis augue ultricies. Nullam dapibus eleifend tortor, vitae pharetra turpis facilisis a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis commodo, libero vitae bibendum congue, sapien urna ullamcorper libero, eu rhoncus enim libero eu odio.</p>
+            <!-- Add more content as needed -->
+        </div>
+        <div id="righ-column">
+            <h2>Scrollable Column</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et justo nec urna consequat varius. Vivamus scelerisque leo eu purus bibendum tincidunt. Nulla facilisi. In hac habitasse platea dictumst. Nullam venenatis facilisis mauris, nec posuere metus auctor vel. Sed a risus in est ultrices luctus non in elit. Fusce imperdiet eros vitae risus sagittis, et facilisis augue ultricies. Nullam dapibus eleifend tortor, vitae pharetra turpis facilisis a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis commodo, libero vitae bibendum congue, sapien urna ullamcorper libero, eu rhoncus enim libero eu odio.</p>
+            <!-- Add more content as needed -->
+        </div>
+    </div>
+    <div id="static-rectangle">
+        
+    </div>
+    
+</body>
+</html>
