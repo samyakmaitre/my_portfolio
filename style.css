@@ -3,17 +3,17 @@ body {
     padding: 0;
     display: flex;
     height: 100vh;
-    background-color: rgb(43, 43, 43);
+    background-color: rgb(30, 30, 30);
 }
 
 #left-column {
     width: 23%;
     height: 95%;
-    background-color: rgb(29, 29, 29);
+    /* background-color: rgb(29, 29, 29); */
     margin: 20px;
     padding: 20px;
     box-sizing: border-box;
-    border: 2px solid #ccc;
+    border: 1px solid #cccccc5b;
     border-radius: 20px;
     justify-content: center;
     align-items: center;
@@ -65,7 +65,7 @@ body {
     height: 15%;
     margin-bottom: 10px;
 }
-.fa {
+#socials .fa {
     padding: 20px;
     font-size: 27px;
     height: 25px;
@@ -73,24 +73,46 @@ body {
     text-align: center;
     text-decoration: none;
     margin: 5px 1px;
-    border: 2px solid #ccc;
+    border: 2px solid #cccccc5b;
     border-radius: 50px;
-    color: #ccc;
+    color: #cccccc5b;
     transition: color 0.3s ease; /* Added transition for a smooth effect */
 }
 
-.fa:hover {
-    color: #1DB954;
-    border-color: #1DB954;
+#socials .fa:hover {
+    color: #30ec8c
+;
+    border-color: #30ec8c
+;
     cursor: default;
 }
   
 
 #mail-button {
-    background-color: #1DB954;
-    height: 10%;
+    background-color: #30ec8c;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    height: 7%;
     border-radius: 50px;
     margin-bottom: 10px;
+    transition: 0.5s ease;
+}
+
+#mail-button:hover{
+    background-color: transparent;
+    color: white;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    height: 7%;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    border: 1px solid #30ec8c;
 }
 
 #right-column {
@@ -101,17 +123,67 @@ body {
     box-sizing: border-box;
 }
 
+.section1{
+    display: inline-flex;
+    
+    
+}
+
+.heading{
+    
+    border: 1px solid #cccccc5b;
+    padding: 0px 10px 2px 10px;
+    width: fit-content;
+    margin-right: 10px;
+    border-radius: 20px;
+    font-size: small;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navlines{
+    height: 50px;
+    width: 45px;
+    border: 1px solid #cccccc5b;
+    padding: 0px 5px 7px 5px;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 50px;
+    
+}
+
 #static-rectangle {
-    border: 2px solid #ccc;
+    border: 2px solid #cccccc5b;
     position: absolute;
     border-radius: 50px;
     top: 25%;
     right: 5%;
     width: 50px;
     height: 50%;
-    background-color: rgb(29, 29, 29);
+    padding: 0px 0px 0px 0px;
 }
 
+
+#static-rectangle .fa {
+    padding: 0px;
+    font-size: 20px;
+    height: 5px;
+    width: 25px;
+    text-align: center;
+    
+    margin: 13px;
+    
+    border-radius: 50px;
+    color: #cccccc5b;
+    transition: color 0.3s ease; /* Added transition for a smooth effect */
+}
+
+#static-rectangle .fa:hover {
+    color: #30ec8c
+;
+    border-color: #30ec8c
+;
+    cursor: default;
+}
 
 .loader-wrapper {
     position: fixed;
@@ -127,7 +199,8 @@ body {
 }
 
 .loader {
-    border: 10px solid #1DB954; /* Loader color */
+    border: 10px solid #30ec8c
+; /* Loader color */
     border-radius: 50%;
     border-top: 8px solid #fff; /* Background color of the loader */
     width: 50px;
