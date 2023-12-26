@@ -123,32 +123,35 @@ body {
     box-sizing: border-box;
 }
 
-.section1{
-    display: inline-flex;
-    
-    
+#section1{
+   
 }
 
 .heading{
-    
+    display: inline;
+    padding-right: 0%;
+    height: 4rem;
+}
+
+.heading a{
+    margin-top: 1.5rem;
     border: 1px solid #cccccc5b;
-    padding: 0px 10px 2px 10px;
-    width: fit-content;
-    margin-right: 10px;
+    padding: 0px 10px 0px 10px; 
+    height: fit-content;
     border-radius: 20px;
     font-size: small;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.navlines{
-    height: 50px;
-    width: 45px;
+.heading b{
+    
     border: 1px solid #cccccc5b;
-    padding: 0px 5px 7px 5px;
-    text-align: center;
+    padding: 2px 15px 2px 15px;
+    margin-left: 10%;
+    
     border-radius: 50px;
     font-size: 50px;
-    
+
 }
 
 #static-rectangle {
