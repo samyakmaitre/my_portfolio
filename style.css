@@ -124,13 +124,15 @@ body {
 }
 
 #section1{
-   
+   width: 100%;
+   display: blockq2qq22;
 }
 
 .heading{
     display: inline;
     padding-right: 0%;
     height: 4rem;
+    width: 100%;
 }
 
 .heading a{
