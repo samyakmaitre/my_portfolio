@@ -8,6 +8,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+
 $(window).on('load', function () {
     // Remove the loader once the page is fully loaded
     $('.loader-wrapper').fadeOut('slow');
