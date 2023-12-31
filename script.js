@@ -8,7 +8,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-
 $(window).on('load', function () {
     // Remove the loader once the page is fully loaded
     $('.loader-wrapper').fadeOut('slow');
@@ -27,3 +26,11 @@ function displayFileName(input) {
     }
 }
 
+// Assuming noPasteInputs is defined as an array of input elements
+const noPasteInputs = document.querySelectorAll('.no-paste');
+
+noPasteInputs.forEach(function (input) {
+    input.addEventListener('option', function (event) {
+        event.preventDefault();
+    });
+});

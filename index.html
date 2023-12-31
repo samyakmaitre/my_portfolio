@@ -107,28 +107,27 @@
                     </div>
                     <h1>Let's Work <c style="color: #30ec8c;">Together!</c></h1>
                     <form action="mailto:samyakmaitre@gmail.com" method="post" enctype="text/plain">
-                        <label for="name">FULL NAME:</label>
-                        <input type="text" id="name" name="name" required>
-                    
-                        <label for="email">EMAIL:</label>
-                        <input type="email" id="email" name="email" required>
+                        
+                        <label for="email">FULL NAME</label>
+                        <input type="text" id="person" placeholder="YOUR NAME HERE" name="email" required>
 
-                        <label for="phone">PHONE:</label>
-                        <input type="email" id="email" name="email" required>
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" placeholder="YOUR EMAIL HERE" name="email" required>
 
-                        <label for="subject">SUBJECT:</label>
-                        <input type="email" id="email" name="email" required>
+                        <label for="phone">PHONE</label>
+                        <input type="tel" id="phone" placeholder="YOUR NUMBER HERE" name="phone" required>
 
-                        <label for="message">MESSAGE:</label>
-                        <input type="email" id="email" name="email" required>
+                        <label for="subject">SUBJECT</label>
+                        <input type="text" id="subject" placeholder="ADD SUBJECT" name="subject" required>
+
+                        <label for="message">MESSAGE</label>
+                        <input type="text" id="message" placeholder="TYPE MESSAGE HERE" name="message" required>
 
                         <label for="attachment">Add an Attachment</label>
                         <input type="file" id="attachment" name="attachment" style="display: none;" onchange="displayFileName(this)">
                         <span id="fileStatusLabel"></span>
-                    
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="4" required></textarea>
-                    
+
+
                         <button type="submit">Send Email</button>
                     </form>
                     
