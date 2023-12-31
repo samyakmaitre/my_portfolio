@@ -99,8 +99,8 @@ body {
     padding: 10px 0px 10px 0px;
     height: 7%;
     border-radius: 50px;
-    margin-bottom: 10px;
-    transition: 0.5s ease;
+    margin-bottom: 10px;transition: 0.5s ease;
+    
 }
 
 #mail-button:hover {
@@ -248,14 +248,24 @@ body {
 
 
 form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 100%;
+}
+
+#message {
+    grid-column: 2 / span 1; /* Place the message input in the second column */
+    grid-row: 1 / span 6; /* Cover the whole height */
 }
 
 label {
     display: block;
+    color: #ffffff;
+    font-size: 17px;
     margin-bottom: 8px;
 }
 
@@ -266,36 +276,38 @@ input, textarea {
     border: none;
     border-radius: 4px;
     background-color: transparent;
-    color: transparent;
+    color: wh;
     caret-color: black;
 }
 
-/* Add a placeholder style for the input */
 input::placeholder, textarea::placeholder {
     color: #555;
 }
 
 button {
     background-color: #30ec8b;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 10px 15px;
     border: none;
-    border-radius: 4px;
+    border-radius: 50px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #2bb67d;
+    background-color: #55555500;
+    box-sizing: border-box;
+    border: 1px solid #30ec8b;
+    transition: 0.5s ease;
+    color: white;
 }
 
-/* Optional: Add styling for file input label */
 #attachmentLabel {
     display: block;
     margin-bottom: 8px;
     color: #555;
 }
 
-#attachment{
+#attachment {
     padding-bottom: 100px;
 }
 
@@ -307,7 +319,6 @@ button:hover {
     text-decoration: underline;
 }
 
-/* Optional: Add styling for file status label */
 #fileStatusLabel {
     color: #555;
 }
