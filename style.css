@@ -159,7 +159,7 @@ body {
 }
 
 
-#section1, #section2, #section3, #section4, #section5, #section6 {
+#section1, #section2, #section3, #section4, #section5, #section6, #section7 {
     height: 100%;
     color: #999999;
 }
@@ -168,10 +168,31 @@ body {
     color: white;
 }
 
-#section2 h1, #section6 h1{
+#section2 h1, #section7 h1{
     font-size: 50px;
     font-weight: lighter;
     color: white;
+}
+
+.timeline {
+    width: 100%;
+    max-height: 75%;
+    margin: 50px auto;
+    position: relative;
+    overflow-y: scroll;
+    white-space: nowrap;
+}
+
+.event {
+    display: block;
+    width: 200px;
+    padding: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 #static-rectangle {
@@ -181,7 +202,7 @@ body {
     top: 25%;
     right: 5%;
     width: 50px;
-    height: 50%;
+    height: 56%;
     padding: 0px 0px 0px 0px;
 }
 
