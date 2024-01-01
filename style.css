@@ -11,6 +11,22 @@ body {
     cursor: pointer; text-decoration: underline; color: blue;
 }
 
+.gear-icon {
+    font-size: 48px;
+    animation: rotateGear 2s linear infinite;
+    transform-origin: center;
+    height: 0px;
+}
+
+@keyframes rotateGear {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 #left-column {
     width: 23%;
     height: 95%;
@@ -183,6 +199,10 @@ body {
     white-space: nowrap;
 }
 
+.timeline.scroll{
+border-radius: 10px;
+}
+
 .event {
     display: block;
     width: 200px;
@@ -193,6 +213,20 @@ body {
     color: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.timeline::-webkit-scrollbar {
+    width: 12px;
+}
+
+.timeline::-webkit-scrollbar-thumb {
+    background-color: #30ec8b;
+    border-radius: 10px;
+}
+
+.timeline::-webkit-scrollbar-track {
+    background-color: #55555592;
+    border-radius: 10px;
 }
 
 #static-rectangle {
