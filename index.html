@@ -13,12 +13,6 @@
     <div class="loader-wrapper">
         <div class="loader"></div>
     </div>
-    
-<lord-icon
-    src="https://cdn.lordicon.com/lecprnjb.json"
-    trigger="hover"
-    style="width:250px;height:250px">
-</lord-icon>
     <div id="left-column">
 
 
@@ -42,7 +36,10 @@
             <a href="#" class="fa fa-twitter"></a>
 
         </div>
-        <div id="mail-button"><i class="fa fa-envelope"></i> MAIL ME!</div>
+        
+        <div id="mail-button" onclick="openMailTo('email')">
+    <i class="fa fa-envelope"></i> MAIL ME!
+</div>
     </div>
 
     <div id="right-column">
@@ -81,7 +78,24 @@
             </div>
 
             <div class="timeline">
-                <div class="event">Event 1</div>
+                <div class="event">
+                    
+                    <div class="point">
+                        
+                        <a class="fa fa-circle" ></a><br>
+                        <b></b>
+                        
+
+                    </div>
+
+
+                    <div class="content">
+
+effe
+                    </div>
+
+
+                </div>
                 <div class="event">Event 2</div>
                 <div class="event">Event 3</div>
                 <div class="event">Event 4</div>
@@ -121,7 +135,7 @@
             It looks like there's a small mistake in your CSS. The :hover pseudo-class should be applied directly to the .fa class, not as a separate class. Also, the correct syntax for hover is .fa:hover, not .fa hover. Here's the corrected version:
                     </section>
 
-                </section><section id="section5">
+                </section><section id="section6">
                     <div class="heading">
                         <a><i class="fa fa-sticky-note"></i>&nbsp;&nbsp;CERTIFICATES</a>
                     </div>
@@ -177,7 +191,7 @@
             <a href="#section3"><i class="fa fa-vcard"></i></a>
             <a href="#section4"><i class="fa fa-star"></i></a>
             <a href="#section5"><i class="fa fa-rocket"></i></a>
-            <a href="#section5"><i class="fa fa-sticky-note"></i></a>
+            <a href="#section6"><i class="fa fa-sticky-note"></i></a>
             <a href="#section7"><i class="fa fa-address-book"></i></a>
            
         </nav>

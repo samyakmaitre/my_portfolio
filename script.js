@@ -1,3 +1,10 @@
+// Remove loader once the page is fully loaded
+$(window).on('load', function () {
+    $('.loader-wrapper').fadeOut('slow');
+});
+
+
+// Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -9,13 +16,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
-
-
-$(window).on('load', function () {
-    // Remove the loader once the page is fully loaded
-    $('.loader-wrapper').fadeOut('slow');
-});
-
+// Display the file name for file input
 function displayFileName(input) {
     const label = document.querySelector('label[for="attachment"]');
     const fileStatusLabel = document.getElementById('fileStatusLabel');
@@ -29,11 +30,26 @@ function displayFileName(input) {
     }
 }
 
-// Assuming noPasteInputs is defined as an array of input elements
+// Disable paste on input fields with the class 'no-paste'
 const noPasteInputs = document.querySelectorAll('.no-paste');
 
 noPasteInputs.forEach(function (input) {
-    input.addEventListener('option', function (event) {
+    input.addEventListener('paste', function (event) {
         event.preventDefault();
     });
 });
+
+
+
+
+
+//
+
+
+
+
+
+
+
+
+

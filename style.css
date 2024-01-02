@@ -11,22 +11,6 @@ body {
     cursor: pointer; text-decoration: underline; color: blue;
 }
 
-.gear-icon {
-    font-size: 48px;
-    animation: rotateGear 2s linear infinite;
-    transform-origin: center;
-    height: 0px;
-}
-
-@keyframes rotateGear {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
 #left-column {
     width: 23%;
     height: 95%;
@@ -205,18 +189,34 @@ border-radius: 10px;
 
 .event {
     display: block;
-    width: 200px;
+    width: 100%;
     padding: 20px;
     margin-right: 20px;
     margin-bottom: 10px;
-    background-color: #3498db;
+    background-color: #3498db00;
     color: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.point{
+    background-color: #30ec8b;
+    width: 10%;
+    display: -ms-inline-grid;
+}
+
+.point b{
+    border-left: 2px solid green;
+    height: 100px;
+}
+
+.content{
+background-color: #ff0000;
+width: 10%;
+}
+
 .timeline::-webkit-scrollbar {
-    width: 12px;
+    width: 5px;
 }
 
 .timeline::-webkit-scrollbar-thumb {
@@ -309,7 +309,8 @@ border-radius: 10px;
 form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    gap: 10px;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -317,18 +318,18 @@ form {
 }
 
 #message {
-    grid-column: 2 / span 1; /* Place the message input in the second column */
-    grid-row: 1 / span 6; /* Cover the whole height */
+    grid-column: 2 / span 1;
+    grid-row: 8 / span 7; 
 }
 
 label {
-    display: block;
+    
     color: #ffffff;
     font-size: 17px;
     margin-bottom: 8px;
 }
 
-input, textarea {
+input {
     width: 100%;
     padding: 8px;
     margin-bottom: 16px;
@@ -339,7 +340,9 @@ input, textarea {
     caret-color: black;
 }
 
-input::placeholder, textarea::placeholder {
+
+
+input::placeholder {
     color: #555;
 }
 
