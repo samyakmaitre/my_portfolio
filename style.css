@@ -6,6 +6,7 @@ body {
     background-color: rgb(30, 30, 30);
     font-family: sans-serif;
     user-select: none;
+    overflow: hidden;
 }
 #attachment{
     cursor: pointer; text-decoration: underline; color: blue;
@@ -181,6 +182,8 @@ body {
     position: relative;
     overflow-y: scroll;
     white-space: nowrap;
+    overflow-x: hidden; /* Add this line to hide the horizontal scrollbar */
+
 }
 
 .timeline.scroll{
@@ -196,23 +199,55 @@ border-radius: 10px;
     background-color: #3498db00;
     color: #fff;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+}
+
+.sub{
+    display: inline-flex;
+    width: 100%;
 }
 
 .point{
-    background-color: #30ec8b;
-    width: 10%;
-    display: -ms-inline-grid;
+    background-color: #30ec8b00;
+    width: 5%;
+    color: #555;
 }
 
 .point b{
-    border-left: 2px solid green;
-    height: 100px;
+    border-left: 1px solid #555;
+    padding:3px 0px 100rem 0px;
+    height: 100rem;
+    margin: 0px 0px 0px 6px;
+}
+
+.content e:hover,
+.sub point :hover{
+    color: #30ec8b;
+    transition: 0.5s ease;
 }
 
 .content{
-background-color: #ff0000;
-width: 10%;
+background-color: #ff000000;
+width: 90%;
+display: block;
+}
+
+.content e{
+    color: #555;
+    display: block;
+    margin-bottom: 5px; /* Optional: add some spacing between the elements */
+}
+
+.content f{
+    display: block;
+    margin-bottom: 5px; /* Optional: add some spacing between the elements */
+
+}
+
+.content g{
+    color: #555;
+    display: block;
+    margin-bottom: 5px; /* Optional: add some spacing between the elements */
 }
 
 .timeline::-webkit-scrollbar {
@@ -271,37 +306,8 @@ width: 10%;
     cursor: default;
 }
 
-.loader-wrapper {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-}
-
-.loader {
-    border: 10px solid #30ec8c;
-    border-radius: 50%;
-    border-top: 8px solid #fff;
-    width: 50px;
-    height: 50px;
-    animation: spin 1s linear infinite;
-}
 
 
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    25% { transform: rotate(360deg); border: black; }
-    50% { transform: rotate(360deg); }
-    75% { transform: rotate(360deg); border: black; }
-    100% { transform: rotate(360deg); }
-}
 
 @import url('https://fonts.cdnfonts.com/css/calligraphy-2');
 
@@ -384,5 +390,7 @@ button:hover {
 #fileStatusLabel {
     color: #555;
 }
+
+
 
 

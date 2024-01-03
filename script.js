@@ -42,8 +42,28 @@ noPasteInputs.forEach(function (input) {
 
 
 
+document.addEventListener('DOMContentLoaded', function () {
+    updateAgeDisplay(); // Initial update
 
-//
+    // Update the age display every second
+    setInterval(updateAgeDisplay, 1000);
+});
+
+function updateAgeDisplay() {
+    const birthDate = new Date('2003-03-08'); // Replace with your birthdate
+    const currentDate = new Date();
+    
+    const ageMilliseconds = currentDate - birthDate;
+    const ageSeconds = Math.floor(ageMilliseconds / 1000);
+    const ageMinutes = Math.floor(ageSeconds / 60);
+    const ageHours = Math.floor(ageMinutes / 60);
+    const ageDays = Math.floor(ageHours / 24);
+    const ageYears = Math.floor(ageDays / 365);
+
+    const ageDisplay = document.getElementById('age-display');
+    ageDisplay.textContent = `Age: ${ageYears} years, ${ageDays % 365} days`;
+}
+
 
 
 
