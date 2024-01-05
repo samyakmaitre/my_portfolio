@@ -23,7 +23,7 @@
 
         </div>
         <div id="profile-img">
-            <img src="me.jpg" alt="">
+            <img src="images/me.jpg" alt="">
         </div>
         <div id="profile-desc"><a>III Year B.Tech CSE | Co-Lead - Design and Production @TEDxVITBhopal & Cy.WarriorsClub | CPP JAVA HTML Python | Web Dev | UI/UX Designing | Graphics Designing | Entrepreneurship Enthusiast</a></div>
         <div id="socials">
@@ -147,6 +147,10 @@
                     </div>
                 </div>
                 
+
+
+                
+                
                 
             </div>
 
@@ -158,37 +162,40 @@
 
                 <h1 style="color: white; font-size: 50px; font-family: sans-serif;font-weight: 100;margin-top: 15px;">My <a style="color: #30ec8c;">+Points</a></h1>
 
-                <div class="board">
-
-                    <div class="frame">
-
+                <div class="grid-container">
+                    <div class="box">
+                        <img src="images/html.png"></img>
+                        <p style="font-weight: bold;">HTML</p>
                     </div>
-                    <div class="frame">
-                        
+                    <div class="box">
+                        <img src="images/css.png"></img>
+                        <p style="font-weight: bold;">CSS</p>
                     </div>
-                    <div class="frame">
-
+                    <div class="box">
+                        <img src="images/java.png"></img>
+                        <p style="font-weight: bold;">JAVA</p>
                     </div>
-                    <div class="frame">
-                        
+                    <div class="box">
+                        <img src="images/python.png"></img>
+                        <p style="font-weight: bold;">PYTHON</p>
                     </div>
-                    <div class="frame">
-
-                    </div>
-                    <div class="frame">
-                        
-                    </div>
-                    <div class="frame">
-
-                    </div>
-                    <div class="frame">
-                        
+                    <div class="box">
+                        <img src="images/react.png"></img>
+                        <p style="font-weight: bold;">REACT</p>
                     </div>
 
-
-
+                    <div class="box">
+                        <img src="images/figma.png"></img>
+                        <p style="font-weight: bold;">FIGMA</p>
+                    </div>
+                    <div class="box">
+                        <img src="images/canva.png"></img>
+                        <p style="font-weight: bold;">CANVA</p>
+                    </div>
+                    
+                    
+                    <!-- Add more boxes as needed -->
                 </div>
-            
             
                 
             </section>
@@ -198,14 +205,11 @@
                     <div class="heading">
                         <a><i class="fa fa-rocket"></i>&nbsp;&nbsp;PROJECTS</a>
                     </div>
-                    
-            It looks like there's a small mistake in your CSS. The :hover pseudo-class should be applied directly to the .fa class, not as a separate class. Also, the correct syntax for hover is .fa:hover, not .fa hover. Here's the corrected version:
-            It looks like there's a small mistake in your CSS. The :hover pseudo-class should be applied directly to the .fa class, not as a separate class. Also, the correct syntax for hover is .fa:hover, not .fa hover. Here's the corrected version:
-            It looks like there's a small mistake in your CSS. The :hover pseudo-class should be applied directly to the .fa class, not as a separate class. Also, the correct syntax for hover is .fa:hover, not .fa hover. Here's the corrected version:
-            It looks like there's a small mistake in your CSS. The :hover pseudo-class should be applied directly to the .fa class, not as a separate class. Also, the correct syntax for hover is .fa:hover, not .fa hover. Here's the corrected version:
-            It looks like there's a small mistake in your CSS. The :hover pseudo-class should be applied directly to the .fa class, not as a separate class. Also, the correct syntax for hover is .fa:hover, not .fa hover. Here's the corrected version:
-            It looks like there's a small mistake in your CSS. The :hover pseudo-class should be applied directly to the .fa class, not as a separate class. Also, the correct syntax for hover is .fa:hover, not .fa hover. Here's the corrected version:
-                    </section>
+
+
+                    <h1 style="color: white; font-size: 50px; font-family: sans-serif;font-weight: 100;margin-top: 15px;">Featured <a style="color: #30ec8c;">Projects</a></h1>
+             
+                </section>
 
                 </section><section id="section6">
                     <div class="heading">
@@ -213,6 +217,18 @@
                     </div>
                     
 
+
+                    <div class="image-container">
+                        <!-- Add your images here -->
+                        <img src="images/canva.png" name="imageSrc" alt="Image 1" onclick="openModal('image1.jpg')">
+                        <img src="images/css.png" alt="Image 2" onclick="openModal('image2.jpg')">
+                        <!-- Add more images as needed -->
+                    </div>
+                
+                    <div id="myModal" class="modal">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <img class="modal-content" id="modalImage">
+                    </div>
 
 
                      </section>
