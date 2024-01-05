@@ -58,25 +58,3 @@ function closeModal() {
 
 //
 
-function showAndFade() {
-    var fadeDiv = document.getElementById('fadeDiv');
-
-    // Display the div
-    fadeDiv.style.display = 'block';
-
-    // Triggering reflow before adding the 'show' class
-    void fadeDiv.offsetWidth;
-
-    // Apply the fade-in effect
-    fadeDiv.style.opacity = 1;
-
-    // After 5 seconds, start the fade-out effect
-    setTimeout(function() {
-      fadeDiv.style.opacity = 0;
-    }, 10000);
-
-    // After the fade-out is complete, hide the div
-    setTimeout(function() {
-      fadeDiv.style.display = 'none';
-    }, 11000);
-  }
