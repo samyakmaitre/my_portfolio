@@ -3,7 +3,6 @@ $(window).on('load', function () {
     $('.loader-wrapper').fadeOut('slow');
 });
 
-
 // Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -14,7 +13,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
-
 
 // Display the file name for file input
 function displayFileName(input) {
@@ -40,21 +38,12 @@ noPasteInputs.forEach(function (input) {
 });
 
 
-
-
-
 //certificate
 function openModal(imageSrc) {
-    document.getElementById('myModal').style.display = "block";
+    document.getElementById('myModal').style.display = "flex";
     document.getElementById('modalImage').src = imageSrc;
 }
 
 function closeModal() {
     document.getElementById('myModal').style.display = "none";
 }
-
-
-
-
-//
-
