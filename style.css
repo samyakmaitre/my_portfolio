@@ -179,6 +179,7 @@ body {
 #section5{
     height: fit-content;
     padding-bottom: -500px;
+    height: 90rem;
 }
 
 .timeline {
@@ -408,40 +409,52 @@ img:nth-child(odd) {
 /*Skills*/
 
 /*Projects*/
-
-
-/* Define styles for the grid */
-.custom-grid {
-    display: grid;
-    height: fit-content;
-    bottom: -100px;
-    padding: 0px 0px 0px 0px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 10px; /* Adjust the gap as needed */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
+.container p{
+            font-weight: bolder;
+            font-size: x-large;
+            padding: 0px 0px 0px 0px ;
+            margin: -10px 0px 0px 0px ;
+           
+             /* Higher z-index */
+            /* margin: 10px; */
+}
 
+/* Define the style for each column */
+.column {
+    z-index: 1000;
+   
+    flex: 1;
+    border-radius: 10px;
+    padding: 0px;
+    height: 300px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
 
-/* Style for images within the grid */
-.grid-item {
+.column:hover{
+    transition: 1s ease;
+    border-color: #30ec8b;
+}
+
+/* Adjust width for the 1st and 3rd rows to span both columns */
+.full-width {
+    height: 300px;
+    flex-basis: 100%;
+    height: 30%;
+}
+
+/* Add some styling for images */
+img {
+    border-radius: 10px 10px 0px 0px;
     width: 100%;
-    height: 33%;
-    object-fit: cover; /* Maintain aspect ratio for images */
-}
+    height: 100%;
 
-/* Set colspan and rowspan for specific grid items */
-.grid-item:nth-child(1) {
-    grid-column: span 2;
-}
-
-.grid-item:nth-child(2) {
-    grid-column: span 1;
-    grid-row: span 1;
-}
-
-.grid-item:nth-child(5) {
-    grid-column: span 2;
 }
 
 /*Projects*/
@@ -454,8 +467,8 @@ img:nth-child(odd) {
     top: 25%;
     right: 5%;
     width: 50px;
-    height:55%;
-    padding: 0px 0px 0px 0px;
+    height:fit-content;
+    padding: 0px 0px 30px 0px;
 }
 
 #static-rectangle b {
