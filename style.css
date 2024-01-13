@@ -177,9 +177,8 @@ body {
 }
 
 #section5{
-    height: fit-content;
-    padding-bottom: -500px;
-    height: 90rem;
+    cursor: default;
+    height: 80rem;
 }
 
 .timeline {
@@ -410,52 +409,68 @@ img:nth-child(odd) {
 
 /*Projects*/
 .container {
+    cursor: default;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
 
-.container p{
-            font-weight: bolder;
-            font-size: x-large;
-            padding: 0px 0px 0px 0px ;
-            margin: -10px 0px 0px 0px ;
-           
-             /* Higher z-index */
-            /* margin: 10px; */
+#col p {
+    cursor: default;
+    position: relative;
+    top: -17%;
+    left: 2%;
+    width: fit-content;
+    font-weight: bolder;
+    font-size: x-large;
+    padding: 7px;
+    margin: 0px;
+    border-radius: 50px;
+    color: #555;
+    z-index: 1000;
+    box-shadow: 0px 0px 10px #555;
+    background-color: #fff;
 }
 
 /* Define the style for each column */
 .column {
-    z-index: 1000;
-   
-    flex: 1;
+    cursor: default;
+    
+    /* flex: 3; */
     border-radius: 10px;
-    padding: 0px;
+    width: auto;
     height: 300px;
     box-sizing: border-box;
-    border: 1px solid #ccc;
+    border: 2px solid #555;
 }
 
 .column:hover{
     transition: 1s ease;
     border-color: #30ec8b;
+    cursor: default;
 }
 
 /* Adjust width for the 1st and 3rd rows to span both columns */
 .full-width {
     height: 300px;
     flex-basis: 100%;
-    height: 30%;
+    cursor: default;
 }
 
 /* Add some styling for images */
-img {
-    border-radius: 10px 10px 0px 0px;
+#col img {
+    cursor: default;
+    filter: blur(2px);
+    border-radius: 8px;
     width: 100%;
     height: 100%;
-
+    z-index: -100000;
+    
 }
+
+
+
+
 
 /*Projects*/
 
