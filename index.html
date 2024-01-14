@@ -29,10 +29,10 @@
         <div id="profile-desc"><a>III Year B.Tech CSE | Co-Lead - Design and Production @TEDxVITBhopal & Cy.WarriorsClub | CPP JAVA HTML Python | Web Dev | UI/UX Designing | Graphics Designing | Entrepreneurship Enthusiast</a></div>
         <div id="socials">
 
-            <a href="#" class="fa fa-linkedin"></a>
-            <a href="#" class="fa fa-github"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-twitter"></a>
+            <a href="https://www.linkedin.com/in/samyak-maitre-5375b021b/" class="fa fa-linkedin"></a>
+            <a href="https://github.com/samyakmaitre" class="fa fa-github"></a>
+            <a href="http://instagram.com/samyakmaitre" class="fa fa-instagram"></a>
+            <a href="https://twitter.com/samyakmaitre" class="fa fa-twitter"></a>
 
         </div>
         
@@ -49,7 +49,7 @@
                 <a><i class="fa fa-home"></i>&nbsp;&nbsp;INTRODUCE</a>
             </div>
             <h1 style="font-size: 5rem; font-weight: 1"><i>"Hi"</i> from <a style="color: #30ec8c;">Samyak</a>, Fullstack Developer and Designer!</h1>
-            <h6 style="font-size: medium">I design and code beautifully simple things and i love what i do. <br> Just simple like that!</h6>
+            <h4>I design and code beautifully simple things and i love what i do. <br> Just simple like that!</h4>
 
             <div id="age-display"></div>    
 
@@ -143,7 +143,7 @@
                         <div class="content">
                             <e>2018-2019</e>
                             <f>Senior Secondary Certificate | CBSE</f>
-                            <g>Bhavan's Lloyds Vidya Niketan | Score: 88.6%</g>
+                            <g>Bhavan's Lloyds Vidya Niketan | Score: 89%</g>
                         </div>
                     </div>
                 </div>
@@ -225,7 +225,7 @@
                         </div>
                         <div class="column full-width" id="col">
                             <!-- Display image for 3rd Row - Column 1 -->
-                            <a href="https://github.com/samyakmaitre/my_portfolio"><img src="images/p4.png" alt="3rd Row - Column 1 Image"></a><p>My Portfolio</p>
+                            <a href="https://github.com/samyakmaitre/my_portfolio"><img src="images/p4.png" alt="3rd Row - Column 1 Image"></a><p>Travel Webpage</p>
                         </div>
                     </div>
 
@@ -240,18 +240,25 @@
                     <h1 style="color: white; font-size: 50px; font-family: sans-serif;font-weight: 100;margin-top: 15px;">My <a style="color: #30ec8c;">Certificates</a></h1>
 
 
-                    <div class="image-container">
-                        <!-- Add your images here -->
-                        <img src="images/canva.png" name="imageSrc" alt="Image 1" onclick="openModal('images/canva.png')">
-                        <img src="images/css.png" alt="Image 2" onclick="openModal('images/css.png')">
-                        <!-- Add more images as needed -->
+                    
+                    <div class="image-grid">
+                        <!-- Add 10 image elements with unique IDs -->
+                        <img src="images/c (1).jpeg" alt="Image 1" id="img1" class="grid-item" onclick="openFullScreen('img1')">
+                        <img src="images/c (2).jpg" alt="Image 2" id="img2" class="grid-item" onclick="openFullScreen('img2')">
+                        <img src="images/c (3).jpg" alt="Image 3" id="img3" class="grid-item" onclick="openFullScreen('img3')">
+                        <img src="images/c (4).jpg" alt="Image 4" id="img4" class="grid-item" onclick="openFullScreen('img4')">
+                        <img src="images/c (5).jpg" alt="Image 5" id="img5" class="grid-item" onclick="openFullScreen('img5')">
+                        <img src="images/c (6).jpg" alt="Image 6" id="img6" class="grid-item" onclick="openFullScreen('img6')">
+                        <!-- Repeat this pattern for the other 9 images -->
+                        <!-- For simplicity, I'm using placeholder images (image1.jpg, image2.jpg, etc.) -->
                     </div>
                 
-                    <div id="myModal" class="modal">
-                        <span class="close" onclick="closeModal()">&times;</span>
-                        <img class="modal-content" id="modalImage">
+                    <!-- Full-screen modal -->
+                    <div id="modal" class="modal">
+                        <span class="close" onclick="closeFullScreen()">&times;</span>
+                        <img src="" alt="Full-screen Image" id="fullScreenImage">
                     </div>
-
+                      
 
                      </section>
 
@@ -260,36 +267,60 @@
                         <a><i class="fa fa-address-book"></i>&nbsp;&nbsp;CONTACT</a>
                     </div>
                     <h1>Let's Work <c style="color: #30ec8c;">Together!</c></h1>
-                    <form action="mailto:samyakmaitre@gmail.com" method="post" enctype="text/plain">                        
+                    <form action="mailto:samyakmaitre@gmail.com" method="post" enctype="text/plain">       
+                        
+                    <div class="leftcol">
+                        
                         <label for="email">FULL NAME</label>
-                        <input type="text" id="person" placeholder="YOUR NAME HERE" name="email" required>
+                        <input type="text" id="person" placeholder="YOUR NAME HERE" autocomplete="off" name="email" required>
 
                         <label for="email">EMAIL</label>
-                        <input type="email" id="email" placeholder="YOUR EMAIL HERE" name="email" required>
+                        <input type="email" id="email" placeholder="YOUR EMAIL HERE" autocomplete="off" name="email" required>
 
                         <label for="phone">PHONE</label>
-                        <input type="tel" id="phone" placeholder="YOUR NUMBER HERE" name="phone" required>
+                        <input type="tel" id="phone" placeholder="YOUR NUMBER HERE" autocomplete="off" name="phone" required>
+
 
                         <label for="subject">SUBJECT</label>
-                        <input type="text" id="subject" placeholder="ADD SUBJECT" name="subject" required>
+                        <input type="text" id="subject" placeholder="ADD SUBJECT"autocomplete="off" name="subject" required>
 
+                    </div>
+                    <div class="rightcol">
+                        
                         <label for="message">MESSAGE</label>
-                        <input type="text" id="message" placeholder="TYPE MESSAGE HERE" name="message" required>
+                        <input type="text" id="message" placeholder="TYPE MESSAGE HERE" name="message" autocomplete="off" required>
+
+                        
 
                         <label for="attachment"><i class="fa fa-upload"></i> Add an Attachment</label>
                         <input type="file" id="attachment" name="attachment" style="display: none;" onchange="displayFileName(this)">
                         <span id="fileStatusLabel"></span>
 
-
                         <button id="button" type="submit">Send Email</button>
+
+                        
+                    </div>
                     </form>
                     
                     
             
                 </section>
+
+                <hr style="width: 50%; margin-bottom: 100px; ">
     </div>
     <div id="static-rectangle" >
-        <b> = </b>
+        
+        <div class="container">
+            <div class="nav-icon" onclick="toggleNav()"><b> = </b></div>
+            <nav class="side-nav">
+                <a style="color: white; font-weight: bold;">Download</a>
+                <hr style="width: 80%;">
+                <a href="images/sample1.txt" download>Resume</a>
+                <a href="images/sample1.txt" download>CV</a>
+            
+            </nav>
+            
+        </div>
 
         <nav>
             <a href="#section1"><i class="fa fa-home"></i></a>

@@ -1,7 +1,4 @@
-// Remove loader once the page is fully loaded
-$(window).on('load', function () {
-    $('.loader-wrapper').fadeOut('slow');
-});
+
 
 
 // Smooth scroll for anchor links
@@ -41,16 +38,33 @@ noPasteInputs.forEach(function (input) {
 
 
 
+//nav
+function toggleNav() {
+    var sideNav = document.querySelector('.side-nav');
+    sideNav.style.width = sideNav.style.width === '175px' ? '0px' : '175px';
+}
+
+
+
 
 
 //certificate
-function openModal(imageSrc) {
-    document.getElementById('myModal').style.display = "block";
-    document.getElementById('modalImage').src = imageSrc;
+function openFullScreen(imageId) {
+    var modal = document.getElementById('modal');
+    var fullScreenImage = document.getElementById('fullScreenImage');
+    
+    // Set the source of the full-screen image
+    fullScreenImage.src = document.getElementById(imageId).src;
+
+    // Display the modal
+    modal.style.display = 'block';
 }
 
-function closeModal() {
-    document.getElementById('myModal').style.display = "none";
+function closeFullScreen() {
+    var modal = document.getElementById('modal');
+
+    // Close the modal
+    modal.style.display = 'none';
 }
 
 
