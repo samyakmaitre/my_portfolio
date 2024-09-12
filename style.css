@@ -102,7 +102,7 @@ body {
 
 #mail-button {
     background-color: #30ec8c;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
